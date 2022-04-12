@@ -1,0 +1,81 @@
+main {
+    margin-top: 120px;
+
+    .calculadora {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        #display {
+            width: 50%;
+            height: 40px;
+            background-color: #E3B505;
+        }
+
+        .calculadora-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .numbers {
+                display: grid;
+                grid-template-columns: repeat(4, 171px);
+                grid-template-rows: repeat(4, 60px);
+                width: 100%;
+                justify-content: center;
+
+                button {
+                    background-color: #044B7F;
+                    color: white;
+                    font-size: 20px;
+                    font-weight: bold;
+                    padding: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 4px;
+                    margin-right: 4px;
+                    border-radius: 6px;
+
+                    &:hover {
+                        cursor: pointer;
+                        color: #501f19;
+                        background-color: #107E7D;
+                    }
+                }
+            }
+
+            #igual {
+                border-radius: 6px;
+                margin-top: 4px;
+                width: 50%;
+                height: 50px;
+                background-color: #044B7F;
+                color: white;
+                font-size: 20px;
+                font-weight: bold;
+
+                &:hover {
+                    cursor: pointer;
+                    color: #501f19;
+                    background-color: #107E7D;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+
+    p {
+        margin: 0;
+        margin-top: 6px;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 30px;
+    }
+}

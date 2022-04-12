@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <main>
+        <div class="calculadora">
+            <input class="display" id="display" type="text" value="" readonly />
+            <div class="calculadora-buttons">
+                <div class="numbers">
+                    <button id="delete" onclick="ponto()">.</button>
+                    <button id="btn9" value="9" class="botao borda" onclick="botao(value)">9</button>
+                    <button id="clean-tudo" onclick="resetar()">C</button>
+                    <button id="divisao" onclick="divisao()">/</button>
+                    <button id="btn8" value="8" class="botao borda" onclick="botao(value)">8</button>
+                    <button id="btn7" value="7" class="botao borda" onclick="botao(value)">7</button>
+                    <button id="btn6" value="6" class="botao borda" onclick="botao(value)">6</button>
+                    <button id="multiplicar" onclick="multiplicar()">*</button>
+                    <button id="btn5" value="5" class="botao borda" onclick="botao(value)">5</button>
+                    <button id="btn4" value="4" class="botao borda" onclick="botao(value)">4</button>
+                    <button id="btn3" value="3" class="botao borda" onclick="botao(value)">3</button>
+                    <button id="soma" onclick="soma()">+</button>
+                    <button id=" btn2" value="2" class="botao borda" onclick="botao(value)">2</button>
+                    <button id="btn0" x value="0" class="botao borda" onclick="botao(value)">0</button>
+                    <button id="btn1" value="1" class="botao borda" onclick="botao(value)">1</button>
+                    <button id="sub" onclick="subtracao()">-</button>
+                </div>
+                <button id="igual" class="end" onclick="igual()">=</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Todos os direitos reservados &copy;2022</p>
+        <p>aliny souza</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

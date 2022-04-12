@@ -1,0 +1,14 @@
+{
+  "name": "calculadora",
+  "version": "1.0.0",
+  "description": "![image](https://user-images.githubusercontent.com/79667413/153730608-0df83eff-69db-46ab-bdf9-5f5f62b62942.png)",
+  "main": "main.js",
+  "scripts": {
+    "sass": "sass ./sass:./css --watch --no-source-map"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.50.0"
+  }
+}
