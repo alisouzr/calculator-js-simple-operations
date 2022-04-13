@@ -2,7 +2,7 @@
 let valor;
 let displayTest;
 let displayTest2;
-
+//isso
 function botao(num) {
     valor = document.getElementById("display").value += num;
 
