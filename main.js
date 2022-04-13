@@ -1,3 +1,4 @@
+"use strict";
 var valor;
 var displayTest;
 var displayTest2;
