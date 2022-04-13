@@ -1,7 +1,7 @@
 "use strict";
-var valor;
-var displayTest;
-var displayTest2;
+let valor;
+let displayTest;
+let displayTest2;
 
 function botao(num) {
     valor = document.getElementById("display").value += num;
