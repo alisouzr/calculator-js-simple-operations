@@ -95,7 +95,28 @@ body {
             width: 100%;
             justify-content: center;
             font-weight: bold;
-            font-size: 30px;
+            font-size: 14px;
+        }
+    }
+}
+
+
+@media (min-width : 768px) {
+    body {
+        main {
+            .calculadora {
+                .calculadora-buttons {
+                    .numbers {
+                        grid-template-rows: repeat(4, 60px);
+                    }
+                }
+            }
+        }
+
+        footer {
+            p {
+                font-size: 30px;
+            }
         }
     }
 }
