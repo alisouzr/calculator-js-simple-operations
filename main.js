@@ -22,8 +22,9 @@ document.querySelector('#clean-all').addEventListener('click', () => {
 
 document.querySelector('#del').addEventListener('click', () => {
     const input = document.querySelector("#display").value;
-
-    document.getElementById("display").value = input.slice(0, -1);
+    console.log(input)
+    const input2 = document.getElementById("display").value = input.slice(0, -1);
+    console.log(input2)
 })
 
 document.querySelector('#sub').addEventListener('click', () => {
@@ -48,21 +49,20 @@ document.querySelector('#dot').addEventListener('click', () => {
 
 
 document.querySelector('#igual').addEventListener('click', () => {
-    document.getElementById("display").value = ''
+    document.querySelector("#display").value = ''
     var inicial = 0;
     var other = 1;
     if (valor.includes("+")) {
-        var resultado = valor.split("+");
-        /* console.log(resultado.length) */
+        let resultado = valor.split("+");
         for (var i = 0; i < resultado.length; i++) {
             var number = parseFloat(resultado[i]);
             inicial += number;
         }
         document.getElementById("display").value += inicial
     } else if (valor.includes("-")) {
-        var resultado = valor.split("-")
-        for (var i = 0; i < resultado.length; i++) {
-            var number = parseFloat(resultado[i]);
+        let resultado = valor.split("-")
+        for (let i = 0; i < resultado.length; i++) {
+            let number = parseFloat(resultado[i]);
             if ((number.lengt - 1) > number[0]) {
                 inicial = inicial - number;
             } else {
@@ -72,16 +72,16 @@ document.querySelector('#igual').addEventListener('click', () => {
         }
         document.getElementById("display").value += inicial
     } else if (valor.includes("*")) {
-        var resultado = valor.split("*");
-        for (var i = 0; i < resultado.length; i++) {
-            var number = parseFloat(resultado[i]);
+        let resultado = valor.split("*");
+        for (let i = 0; i < resultado.length; i++) {
+            let number = parseFloat(resultado[i]);
             other *= number;
         }
         document.getElementById("display").value += other
     } else if (valor.includes("/")) {
-        var resultado = valor.split("/");
-        for (var i = 0; i < resultado.length; i++) {
-            var number = parseFloat(resultado[i]);
+        let resultado = valor.split("/");
+        for (let i = 0; i < resultado.length; i++) {
+            let number = parseFloat(resultado[i]);
             other = (1 / number) / other;
         }
         document.getElementById("display").value += other
