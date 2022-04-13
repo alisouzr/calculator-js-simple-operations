@@ -1,29 +1,46 @@
-main {
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "arial";
+}
+
+body {
+  margin: 0 10%;
+}
+body main {
   margin-top: 120px;
 }
-main .calculadora {
+body main .calculadora {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-main .calculadora #display {
-  width: 50%;
-  height: 40px;
-  background-color: #E3B505;
-}
-main .calculadora .calculadora-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-main .calculadora .calculadora-buttons .numbers {
-  display: grid;
-  grid-template-columns: repeat(4, 171px);
-  grid-template-rows: repeat(4, 60px);
+body main .calculadora #display {
   width: 100%;
+  height: 56px;
+  background-color: #E3B505;
+  border-radius: 10px;
+  font-size: 26px;
+  padding-left: 10px;
+}
+body main .calculadora .calculadora-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+body main .calculadora .calculadora-buttons .numbers {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(4, 60px);
   justify-content: center;
 }
-main .calculadora .calculadora-buttons .numbers button {
+body main .calculadora .calculadora-buttons .numbers button {
   background-color: #044B7F;
   color: white;
   font-size: 20px;
@@ -36,32 +53,32 @@ main .calculadora .calculadora-buttons .numbers button {
   margin-right: 4px;
   border-radius: 6px;
 }
-main .calculadora .calculadora-buttons .numbers button:hover {
+body main .calculadora .calculadora-buttons .numbers button:hover {
   cursor: pointer;
   color: #501f19;
   background-color: #107E7D;
 }
-main .calculadora .calculadora-buttons #igual {
+body main .calculadora .calculadora-buttons #igual {
   border-radius: 6px;
   margin-top: 4px;
-  width: 50%;
+  width: 100%;
   height: 50px;
   background-color: #044B7F;
   color: white;
   font-size: 20px;
   font-weight: bold;
 }
-main .calculadora .calculadora-buttons #igual:hover {
+body main .calculadora .calculadora-buttons #igual:hover {
   cursor: pointer;
   color: #501f19;
   background-color: #107E7D;
 }
-
-footer {
+body footer {
+  margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
 }
-footer p {
+body footer p {
   margin: 0;
   margin-top: 6px;
   display: flex;
