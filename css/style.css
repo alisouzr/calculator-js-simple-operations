@@ -11,14 +11,17 @@ body {
 body {
   margin: 0 10%;
 }
+
 body main {
   margin-top: 120px;
 }
+
 body main .calculadora {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
+
 body main .calculadora #display {
   width: 100%;
   height: 56px;
@@ -27,12 +30,14 @@ body main .calculadora #display {
   font-size: 26px;
   padding-left: 10px;
 }
+
 body main .calculadora .calculadora-buttons {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
 }
+
 body main .calculadora .calculadora-buttons .numbers {
   width: 100%;
   display: grid;
@@ -40,6 +45,7 @@ body main .calculadora .calculadora-buttons .numbers {
   grid-template-rows: repeat(4, 60px);
   justify-content: center;
 }
+
 body main .calculadora .calculadora-buttons .numbers button {
   background-color: #044B7F;
   color: white;
@@ -53,16 +59,19 @@ body main .calculadora .calculadora-buttons .numbers button {
   margin-right: 4px;
   border-radius: 6px;
 }
+
 body main .calculadora .calculadora-buttons .numbers button:hover {
   cursor: pointer;
   color: #501f19;
   background-color: #107E7D;
 }
+
 body main .calculadora .calculadora-buttons .final {
   width: 100%;
   display: grid;
   grid-template-columns: 19% 79%;
 }
+
 body main .calculadora .calculadora-buttons .final button {
   border-radius: 6px;
   margin-top: 4px;
@@ -73,19 +82,23 @@ body main .calculadora .calculadora-buttons .final button {
   font-size: 20px;
   font-weight: bold;
 }
+
 body main .calculadora .calculadora-buttons .final button#igual {
   margin-left: 2%;
 }
+
 body main .calculadora .calculadora-buttons .final button:hover {
   cursor: pointer;
   color: #501f19;
   background-color: #107E7D;
 }
+
 body footer {
   margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
 }
+
 body footer p {
   margin: 0;
   margin-top: 6px;
@@ -100,6 +113,7 @@ body footer p {
   body main .calculadora .calculadora-buttons .numbers {
     grid-template-rows: repeat(4, 60px);
   }
+
   body footer p {
     font-size: 30px;
   }
