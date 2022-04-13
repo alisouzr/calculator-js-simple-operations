@@ -58,7 +58,12 @@ body main .calculadora .calculadora-buttons .numbers button:hover {
   color: #501f19;
   background-color: #107E7D;
 }
-body main .calculadora .calculadora-buttons #igual {
+body main .calculadora .calculadora-buttons .final {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 19% 79%;
+}
+body main .calculadora .calculadora-buttons .final button {
   border-radius: 6px;
   margin-top: 4px;
   width: 100%;
@@ -68,7 +73,10 @@ body main .calculadora .calculadora-buttons #igual {
   font-size: 20px;
   font-weight: bold;
 }
-body main .calculadora .calculadora-buttons #igual:hover {
+body main .calculadora .calculadora-buttons .final button#igual {
+  margin-left: 2%;
+}
+body main .calculadora .calculadora-buttons .final button:hover {
   cursor: pointer;
   color: #501f19;
   background-color: #107E7D;

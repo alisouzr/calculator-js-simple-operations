@@ -20,6 +20,12 @@ document.querySelector('#clean-all').addEventListener('click', () => {
     document.getElementById("display").value = '';
 })
 
+document.querySelector('#del').addEventListener('click', () => {
+    const input = document.querySelector("#display").value;
+
+    document.getElementById("display").value = input.slice(0, -1);
+})
+
 document.querySelector('#sub').addEventListener('click', () => {
     document.getElementById("display").value += '-'
 })
