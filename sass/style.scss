@@ -13,7 +13,12 @@ body {
     margin: 0 10%;
 
     main {
-        margin-top: 120px;
+        margin-top: 46px;
+
+        h1 {
+            display: flex;
+            justify-content: center;
+        }
 
         .calculadora {
             display: flex;
@@ -115,6 +120,8 @@ body {
 @media (min-width : 768px) {
     body {
         main {
+            margin-top: 76px;
+
             .calculadora {
                 .calculadora-buttons {
                     .numbers {
@@ -126,7 +133,7 @@ body {
 
         footer {
             p {
-                font-size: 30px;
+                font-size: 20px;
             }
         }
     }
